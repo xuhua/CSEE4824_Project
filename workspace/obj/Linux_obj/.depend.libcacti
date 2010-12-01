@@ -1,0 +1,13 @@
+
+$(OBJ)/libcacti.a:$(OBJ)/cacti42_area.o $(OBJ)/cacti42_basic_circuit.o $(OBJ)/cacti42_io.o $(OBJ)/cacti42_leakage.o $(OBJ)/cacti42_time.o $(OBJ)/cacti_setup.o
+$(OBJ)/cacti_setup.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_setup.cpp $(SRC_DIR)/libsuc/nanassert.h $(SRC_DIR)/libsuc/SescConf.h $(SRC_DIR)/libsuc/Snippets.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_areadef.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_interface.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_io.h $(SRC_DIR)/libsuc/ThermTrace.h $(SRC_DIR)/libsuc/Config.h $(SRC_DIR)/libmint/mendian.h $(SRC_DIR)/libsuc/estl.h $(SRC_DIR)/libmint/myelf.h $(SRC_DIR)/libmint/coff.h
+$(OBJ)/cacti42_area.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_area.c /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_areadef.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_basic_circuit.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_interface.h
+$(OBJ)/cacti42_basic_circuit.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_basic_circuit.c /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h
+$(OBJ)/cacti42_io.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_io.c /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_areadef.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_basic_circuit.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_interface.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_leakage.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_time.h
+$(OBJ)/cacti42_leakage.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_leakage.c /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_leakage.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_areadef.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_interface.h
+$(OBJ)/cacti42_time.o: /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_time.c /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_areadef.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_basic_circuit.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_def.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti42_leakage.h /home/yoon333/project_sesc/sesc/src/libpower/cacti/cacti_interface.h
+
+
+
+
+

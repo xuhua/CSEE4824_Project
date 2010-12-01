@@ -1,0 +1,13 @@
+
+$(OBJ)/libapp.a:$(OBJ)/sesc_thread.o $(OBJ)/sesc_events.o $(OBJ)/sesc_locks.o $(OBJ)/sesc_fortran.o $(OBJ)/sesc_chud.o
+$(OBJ)/sesc_events.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_events.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+$(OBJ)/sesc_fortran.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_fortran.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+$(OBJ)/sesc_locks.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_locks.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+$(OBJ)/sesc_thread.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_thread.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+$(OBJ)/sesc_tls.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_tls.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+$(OBJ)/sesc_ts.o: /home/yoon333/project_sesc/sesc/src/libapp/sesc_ts.c /home/yoon333/project_sesc/sesc/src/libapp/sescapi.h /home/yoon333/project_sesc/sesc/src/libapp/simicsapi.h
+
+
+
+
+

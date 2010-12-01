@@ -1,0 +1,13 @@
+
+$(OBJ)/libwattch.a:$(OBJ)/wattch_power.o $(OBJ)/wattch_setup.o $(OBJ)/wattch_time.o $(OBJ)/wattch_io.o $(OBJ)/wattch_cache.o $(OBJ)/wattch_misc.o
+$(OBJ)/wattch_setup.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_setup.cpp /home/yoon333/project_sesc/sesc/src/libpower/wattch/setup.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_setup.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/machine.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_power.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_cache.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/host.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/misc.h
+$(OBJ)/wattch_cache.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_cache.c /home/yoon333/project_sesc/sesc/src/libpower/wattch/host.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/misc.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/machine.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_cache.h
+$(OBJ)/wattch_io.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_io.c /home/yoon333/project_sesc/sesc/src/libpower/wattch/def.h
+$(OBJ)/wattch_misc.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_misc.c /home/yoon333/project_sesc/sesc/src/libpower/wattch/host.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/misc.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/machine.h
+$(OBJ)/wattch_power.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_power.c /home/yoon333/project_sesc/sesc/src/libpower/wattch/machine.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_power.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_cache.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/host.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/misc.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/setup.h
+$(OBJ)/wattch_time.o: /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_time.c /home/yoon333/project_sesc/sesc/src/libpower/wattch/def.h
+
+
+
+
+

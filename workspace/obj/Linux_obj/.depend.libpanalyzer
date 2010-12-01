@@ -1,0 +1,15 @@
+
+$(OBJ)/libpanalyzer.a:$(OBJ)/technology.o $(OBJ)/circuit.o $(OBJ)/logic.o $(OBJ)/support.o $(OBJ)/microstrip.o $(OBJ)/clock.o
+$(OBJ)/circuit.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/circuit.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h
+$(OBJ)/clock.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/clock.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/circuit.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/clock.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/support.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/logic.h
+$(OBJ)/io.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/io.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/io.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/circuit.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/microstrip.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h
+$(OBJ)/logic.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/logic.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/logic.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/support.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/circuit.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h
+$(OBJ)/microstrip.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/microstrip.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/microstrip.h
+$(OBJ)/random_logic.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/random_logic.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/random_logic.h
+$(OBJ)/support.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/support.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/logic.h /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h
+$(OBJ)/technology.o: /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.c /home/yoon333/project_sesc/sesc/src/libpower/panalyzer/technology.h
+
+
+
+
+

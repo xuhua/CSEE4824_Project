@@ -1,0 +1,9 @@
+
+$(OBJ)/libpower.a:$(OBJ)/powermain.o $(OBJ)/cacmain.o
+$(OBJ)/cacmain.o: /home/yoon333/project_sesc/sesc/src/libpower/cacmain.cpp $(SRC_DIR)/libsuc/SescConf.h $(SRC_DIR)/libsuc/ReportGen.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_setup.h /home/yoon333/project_sesc/sesc/src/libpower/orion/orion_setup.h $(SRC_DIR)/libsuc/Config.h $(SRC_DIR)/libsuc/nanassert.h $(SRC_DIR)/libsuc/estl.h
+$(OBJ)/powermain.o: /home/yoon333/project_sesc/sesc/src/libpower/powermain.cpp $(SRC_DIR)/libsuc/SescConf.h $(SRC_DIR)/libsuc/ReportGen.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/misc.h /home/yoon333/project_sesc/sesc/src/libpower/wattch/wattch_setup.h $(SRC_DIR)/libsuc/Config.h $(SRC_DIR)/libsuc/nanassert.h $(SRC_DIR)/libsuc/estl.h
+$(OBJ)/libpower.a: $(OBJ)/libcacti.a $(OBJ)/libwattch.a $(OBJ)/libpanalyzer.a
+-include $(OBJ)/.depend.libcacti
+-include $(OBJ)/.depend.libwattch
+-include $(OBJ)/.depend.libpanalyzer
+

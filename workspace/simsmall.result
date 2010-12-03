@@ -210,7 +210,7 @@ frequency =1900000000
 [voidDevice]
 deviceType='void'
 #END Configuration used. Extracted from "../confs/NoL2SinglePower.conf":
-OSSim:beginTime=Thu Dec  2 20:58:53 2010
+OSSim:beginTime=Thu Dec  2 21:18:33 2010
 
 OSSim:bench=./sesc.smp -c../confs/NoL2SinglePower.conf -dsimsmall -fresult ../programy/programy.sesc 6 64 4 
 OSSim:benchName=programy.sesc
@@ -219,7 +219,7 @@ ProcessId(0):cpu=0:migrable=true:pinned=false:pid=0:ppid=-1:parentId=-1
 ProcessId:nSwitchs=1:nSpawns=0:nGradInsts=32142898:nWPathInsts=0
 Proc(0):clockTicks=25623068
 OSSim:reportName=Final
-OSSim:msecs=   26.55:nCPUs=1:nCycles=25623069
+OSSim:msecs=   26.52:nCPUs=1:nCycles=25623069
 OSSim:pseudoreset=0
 Proc(0):fetchPower=1.96732
 Proc(0):issuePower=3.18166
@@ -589,5 +589,5 @@ BPred(0)_BTB:nHit=478094
 BPred(0)_BTB:nMiss=57
 BPred(0)_BTB:btbEnergy=118557
 END GStats::report Final
-OSSim:endTime=Thu Dec  2 20:59:19 2010
+OSSim:endTime=Thu Dec  2 21:19:00 2010
 

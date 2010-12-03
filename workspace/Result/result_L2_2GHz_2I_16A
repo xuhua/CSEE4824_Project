@@ -1,0 +1,95 @@
+# Bench : ./sesc.smp -c../confs/L2SinglePower.conf -dsimsmall -fresult ../programy/programy.sesc 6 64 4 
+# File  : simsmall.result      :       Thu Dec  2 21:01:29 2010
+      Exe Speed        Exe MHz         Exe Time         Sim Time (2000MHz)
+    818.302 KIPS      0.9278 MHz      39.280 secs      18.222 msec
+Proc  Avg.Time BPType       Total          RAS           BPred          BTB            BTAC
+   0   45.769  hybrid       98.80% ( 72.22% of   0.00%)  98.80% ( 99.99% of  49.38%)   0.00% 
+           nInst     BJ    Load   Store      INT      FP  : LD Forward , Replay : Worst Unit (clk)
+   0    32142898   3.01%  46.95%   3.04%  44.09%   2.90%  :      6.42%   5357150 inst/repl  :  ALUIssueSmall 0.19 
+Proc  IPC    CPI        Cycles  Busy   LDQ   STQ  IWin   ROB  Regs Ports   TLB  maxBr MisBr Br4Clk  Other
+   0  0.882  1.134     36444550  44.1   0.0   0.0   0.0  54.5   0.0   0.0   0.0   0.0    1.4    0.0    0.0 
+################################################################################
+Proc         Cache Occ MissRate (RD, WR) %DMemAcc MB/s : ... 
+   0      DL1Small 0.000000   0.05% ( 0.0%, 0.0%) 93.96%  0.01GB/s
+    :        L1L2D 18.23 MB/s
+    :           L2 0.000193  97.74% (97.7%, 0.0%)  0.05%  0.01GB/s
+    :    memoryBus 18.2212 MB/s
+    :       memory
+    : 
+################################################################################
+Proc         Cache Occ MissRate (RD, WR) %DMemAcc MB/s : ... 
+   0      IL1Small 0.000000   0.00% ( 0.0%, 0.0%) 100.08%  0.00GB/s
+    :        L1L2I 0.309072 MB/s
+    :           L2 0.000193  97.74% (97.7%, 0.0%)  0.05%  0.01GB/s
+    :    memoryBus 18.2212 MB/s
+    :       memory
+    : 
+################################################################################
+Proc CacheName LVID revLVID Energy : ... 
+################################################################################
+Proc        Fetch     Issue      Mem       Exec     Clock     Total (watts)
+0     2.769      1.615      2.598      5.969      3.205     16.155 
+Total     2.769      1.615      2.598      5.969      3.205     16.155 
+
+----------------------------------------------------------
+
+#1. multicore configuration.
+cpucore[0] = 'SmallCore'		# e.g. if you want to use 1 large-core:
+										# cpucore[0] = 'LargeCore'
+
+#2. Issue width for each core types (i.e. small, mid, and large.)
+issueLarge         = 1     	# large-processor issue width 
+issueMid           = 1     	# mid-processor issue width   
+issueSmall         = 2     	# small-processor issue width 
+
+#3. IL1 & DL1 configuration for large cores
+LargeIL1CacheSize  	= 32768
+LargeIL1Assoc		= 2
+LargeIL1AccessTime	= 1		# Need to be calculated by CACTI
+
+LargeDL1CacheSize  	= 32768
+LargeDL1Assoc		= 2
+LargeDL1AccessTime	= 1		# Need to be calculated by CACTI
+
+
+#4. IL1 & DL1 configuration for mid cores
+MidIL1CacheSize  	= 32768
+MidIL1Assoc			= 2
+MidIL1AccessTime	= 1			# Need to be calculated by CACTI
+
+MidDL1CacheSize  	= 32768
+MidDL1Assoc			= 2
+MidDL1AccessTime	= 1			# Need to be calculated by CACTI
+
+#5. IL1 & DL1 configuration for small cores
+SmallIL1CacheSize  	= 32768
+SmallIL1Assoc		= 16
+SmallIL1AccessTime	= 2		# Need to be calculated by CACTI
+
+SmallDL1CacheSize  	= 32768
+SmallDL1Assoc		= 16
+SmallDL1AccessTime	= 2		# Need to be calculated by CACTI
+
+#6. L2 configuration 
+L2CacheSize			= 32768
+L2Assoc				= 16
+L2AccessTime		= 2		# Need to be calculated by CACTI
+L2NumBanks			= 2
+
+#7. Common Configuration for caches
+CacheBlockSize		= 32  
+
+#8. Clock frequency configuration
+Frequency = 2000000000 			# 2000Mhz
+
+#9. Core type inorder/out-of-order configuration 
+[LargeCore]
+inorder         = false 			# does the core execute in order?
+
+[MidCore]
+inorder         = false 			# does the core execute in order?
+
+[SmallCore]
+inorder         = false 			# does the core execute in order?
+
+

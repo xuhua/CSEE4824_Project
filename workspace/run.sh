@@ -3,8 +3,8 @@
 # EE of Columbia University
 # This file can only be modified by my team member.
 #============================Configuration==================================================================#
-config_file='NoL2Single.conf'
-config_power='NoL2SinglePower.conf'
+config_file='L2Single.conf'
+config_power='L2SinglePower.conf'
 Datasets='6 64 4'
 #====================Don't modified below this line unless you know what you are doing :) ==============#####
 if [ "$1" = "-cal" ]; then

@@ -1,2 +1,2 @@
-CPU cycles: 19338993
+CPU cycles: 789806470
 your result is correct!

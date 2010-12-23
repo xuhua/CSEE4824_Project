@@ -1,0 +1,28 @@
+# Bench : ./sesc.smp -c../confs/NoL2SinglePower.conf -dsimsmall -fresult ../programy/programy.sesc 6 64 4 
+# File  : simsmall.result      :       Thu Dec 23 03:47:14 2010
+      Exe Speed        Exe MHz         Exe Time         Sim Time (1900MHz)
+   1096.574 KIPS      0.9090 MHz       7.120 secs       3.406 msec
+Proc  Avg.Time BPType       Total          RAS           BPred          BTB            BTAC
+   0   51.029  hybrid       98.57% ( 81.13% of   0.02%)  98.57% ( 99.96% of  49.29%)   0.00% 
+           nInst     BJ    Load   Store      INT      FP  : LD Forward , Replay : Worst Unit (clk)
+   0     7807606   4.28%  45.66%   4.34%  41.62%   4.10%  :     23.33%      95 inst/repl  :  LDSTIssueSmall 1.02 
+Proc  IPC    CPI        Cycles  Busy   LDQ   STQ  IWin   ROB  Regs Ports   TLB  maxBr MisBr Br4Clk  Other
+   0  1.206  0.829      6472242  40.2   0.0   0.0   0.2  56.6   0.0   0.0   0.0   0.0    2.9    0.0    0.1 
+################################################################################
+Proc         Cache Occ MissRate (RD, WR) %DMemAcc MB/s : ... 
+   0      DL1Small 0.000000   0.09% ( 0.1%, 0.0%) 78.69%  0.03GB/s
+    :      memDBus 26.2467 MB/s
+    :       memory
+    : 
+################################################################################
+Proc         Cache Occ MissRate (RD, WR) %DMemAcc MB/s : ... 
+   0      IL1Small 0.000000   0.01% ( 0.0%, 0.0%) 66.83%  0.00GB/s
+    :      memIBus 1.77546 MB/s
+    :       memory
+    : 
+################################################################################
+Proc CacheName LVID revLVID Energy : ... 
+################################################################################
+Proc        Fetch     Issue      Mem       Exec     Clock     Total (watts)
+0     1.876      3.060      2.189      7.908      3.622     18.655 
+Total     1.876      3.060      2.189      7.908      3.622     18.655 
